@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- icone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <!--Important link source from https://bootsnipp.com/snippets/ooa9M-->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!------ Include the above in your HEAD tag ---------->
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+    .hover:hover {
+      color: rgb(248, 188, 188) !important;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .color1 {
+      background-color:
+        #fdfdfd;
+    }
+
+    #cl {
+      color: black !important;
+    }
+
+    .sign-btn {
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+      width: 100%;
+
+    }
+
+    .sign-btn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .b-img {
+      background-image: url(images/5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+
+    .btn11 {
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .btn11:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .input11 {
+      border: none;
+      outline: none;
+    }
+
+    .colork {
+      color: #6e6c3c;
+    }
+
+    #hero1 {
+      background: url(images/shoose22.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    .hero,
+    .content {
+      text-align: center;
+      position: relative;
+      width: 100%;
+
+    }
+
+    .inner {
+      min-height: 600px;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+   <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./images/products/jacket-1.jpg" alt="jacket sale" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+    jacket sale
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="container-fluid">
+    <!-- black patti -->
+    <div class="row bg-black linehight">
+      <div class="col  d-none col-sm-6 col-md-6 col-lg-4  d-md-inline-block d-sm-inline-block text-center p-2">
+        <i class="bi bi-facebook text-white m-2  hover "></i>
+        <i class="bi bi-instagram text-white m-2 hover "></i>
+        <i class="bi bi-tiktok text-white m-2  hover"></i>
+        <i class="bi bi-snapchat text-white m-2  hover"></i>
+      </div>
+      <div class="col col-lg-4 
+             d-none d-lg-inline d-xl-inline-block ">
+        <p class="h6 text-white d-flex justify-content-center m-2 ">Welcome To Our Aveda Fashion Store !</p>
+      </div>
+      <div class="col   
+             text-white d-flex justify-content-center">
+        <p class="h6 m-2 ">Wishlist</p>
+        <p class="h6 m-2 ">Contact</p>
+      </div>
+
+    </div>
+    <!-- navbar -->
+    <div class="row color1 position-sticky fixed-top shadow-sm">
+      <div class="col  d-lg-none d-xl-none d-flex justify-content-center align-items-center">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i id="cl" class="bi bi-list"></i>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Fashion
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Men</a>
+                  <a class="dropdown-item" href="#">Women</a>
+                  <a class="dropdown-item" href="#">Kids</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Category
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <a class="dropdown-item" href="#">Kids</a></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Included Pages
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Wishlist</a>
+                  <a class="dropdown-item" href="#">Blog</a>
+                  <a class="dropdown-item" href="#">404</a>
+                  <a class="dropdown-item" href="#">Colletion</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  About Us
+                </button>
+              </h2>
+
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  FAQs
+                </button>
+              </h2>
+
+            </div>
+          </div>
+
+        </div>
+
+        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 " trigger="hover"
+          style="width: 30;;height: 30;">
+        </lord-icon>
+
+      </div>
+      <div class="col  d-flex p-3 justify-content-center align-items-center">
+        <p class="h2 fw-bold text-dark mt-3">Aveda</p>
+        <p class="h2 text-muted">.</p>
+      </div>
+      <div
+        class="col d-none col-lg-6  d-lg-flex d-xl-flex d-md-none  d-flex justify-content-center align-items-center pt-3">
+
+
+        <nav class="desktop-navigation-menu">
+
+          <div class="container bg-white">
+
+            <ul class="desktop-menu-category-list">
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Home</a>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Categories</a>
+
+                <div class="dropdown-panel">
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Electronics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Desktop</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Laptop</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Camera</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Tablet</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Headphone</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="images/1.jpg" alt="headphone collection" width="250" height="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Men's</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Formal</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Casual</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Sports</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Jacket</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Sunglasses</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="images/2.jpg" alt="men's fashion" width="250" height="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Women's</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Formal</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Casual</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Perfume</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Cosmetics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Bags</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="images/3.jpg" alt="women's fashion" width="250" height="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Electronics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Watch</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Smart TV</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Keyboard</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Mouse</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Microphone</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="images/4.jpg">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Men's</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Shirt</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Shorts & Jeans</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Safety Shoes</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Wallet</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Women's</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Dress & Frock</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Earrings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Necklace</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Makeup Kit</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Jewelry</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Earrings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Couple Rings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Necklace</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Bracelets</a>
+                  </li>
+
+                </ul>
+              </li>
+
+
+
+              <div class="header-top-actions">
+
+                <select name="currency">
+
+                  <option value="usd">USD &dollar;</option>
+                  <option value="eur">EUR &euro;</option>
+
+                </select>
+
+
+              </div>
+            </ul>
+
+          </div>
+
+        </nav>
+
+
+
+      </div>
+      <div class="col  d-flex justify-content-center align-items-center">
+
+        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 d-none d-lg-flex" trigger="hover"
+          style="width: 30;;height: 30;">
+        </lord-icon>
+
+
+        <a href="" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+          <lord-icon src="https://cdn.lordicon.com/bhfjfgqz.json" class="m-2 mt-3" trigger="hover"
+            style="width: 30;;height: 30;">
+          </lord-icon>
+        </a>
+        <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" class="m-2" trigger="hover" style="width:30;height:30">
+        </lord-icon>
+        <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none d-  "
+          style="width:30;height:30">
+        </lord-icon>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- sliderrrrrrrrrr -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-left: -20px; margin-right: -20px; overflow: hidden;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider2_67a71704-1fbe-4ce4-99bc-3135d95a446f.png?v=1614320343" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block" id="c1">
+            <h5 class="slider-heading1">T-Shirt</h5>
+            <h2 class="slider-heading2">Man's <br><span style="color: black;">Fashion!</span></h2>
+            <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+            <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
+          <div class="carousel-caption2  d-md-block" id="c1">
+            <h5 class="slider-heading1">Spring</h5>
+            <h2 class="slider-heading2">Trandy <br><span style="color: black;">Fashion!</span></h2>
+            <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+            <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Second slide label</h3>
+            <p>Some representative placeholder content for the second slide.</p>
+            <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+          </div>
+        </div> -->
+       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- girl image -->
+
+
+    <div class="row ">
+      <div class="girl-1 col-12 col-md-12  col-lg-4">
+        <div class="container">
+          <div class="box">
+            <div class="imgBox">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/aboutusbanner.png?v=1614316340" alt="">
+            </div>
+            <div class="content border">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12  col-md-12 col-lg-6" style="margin: 15px;">
+        <p class="h6" id="about">ALL ABOUT US</p>
+        <p class="h1" id="summer" style="color: black;"> Summer Fashion</p>
+        <p class="lorem" id="img-lorem" style="margin-top: 13px;" style="color: black;">Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <p class="lorem" id="img-lorem" style="color: black;">tempor
+          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+        <p class="lorem" id="img-lorem" style="color: black;">ultrices
+          gravida. Risus commodo viverra maecenas accumsan lacus vel</p>
+        <p class="lorem" id="img-lorem" style="color: black;">
+          facilisis.</p>
+        <p class="lorem" id="img-lorem" style="color: black;">Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <p class="lorem" id="img-lorem" style="color: black;">tempor
+          incididunt ut labore .</p>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+  
+
+
+
+      <!--product card grid-->
+      <div class="product-main">
+
+        <h2 class="title">New Products</h2>
+    
+        <div class="product-grid">
+    
+          <div class="showcase">
+    
+            <div class="showcase-banner">
+    
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d_533x.png?v=1605252646" alt="Mens Winter Leathers Jackets" width="300"
+                class="product-img default">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/4_b77ffde1-a4fe-4ec5-8cba-ae4ae9d1e503_720x.png?v=1605252646" alt="Mens Winter Leathers Jackets" width="300"
+                class="product-img hover">
+    
+              <p class="showcase-badge">15%</p>
+    
+              <div class="showcase-actions">
+    
+                <button class="btn-action">
+                  <i class="bi bi-eye"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-heart"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-cart4"></i>
+                </button>
+
+
+                <button class="btn-action">
+                  <a href="./second page/product page.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+                  
+      
+                </button>
+      
+    
+              </div>
+    
+            </div>
+    
+            <div class="showcase-content">
+    
+              <a href="#" class="showcase-category">jacket</a>
+    
+              <a href="#">
+                <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+              </a>
+    
+              <div class="price-box">
+                <p class="price">$48.00</p>
+                <del>$75.00</del>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <div class="showcase">
+    
+            <div class="showcase-banner">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/17_68723c12-1e46-471d-9b43-21834d6931ad_940x.png?v=1605252566" alt="Pure Garment Dyed Cotton Shirt"
+                class="product-img default" width="300">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/18_9f8cd3d5-6a98-4ae0-ac12-25fd56bedfe1_940x.png?v=1605252568" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                width="300">
+    
+              <p class="showcase-badge angle black">sale</p>
+    
+              <div class="showcase-actions">
+    
+                <button class="btn-action">
+                  <i class="bi bi-eye"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-heart"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-cart4"></i>
+                </button>
+
+
+                <button class="btn-action">
+                  <a href="./second page/product page.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+                  
+      
+                </button>
+      
+    
+              </div>
+    
+            </div>
+    
+            <div class="showcase-content">
+              <a href="#" class="showcase-category">shirt</a>
+    
+              <h3>
+                <a href="#" class="showcase-title">Pure Garment Dyed Cotton Shirt</a>
+              </h3>
+    
+              <div class="price-box">
+                <p class="price">$45.00</p>
+                <del>$56.00</del>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <div class="showcase">
+    
+            <div class="showcase-banner">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/1_7bd5787c-b77b-4f4c-a45e-d6f3c9e2f1d6.png?v=1605252315" alt="MEN Yarn Fleece Full-Zip Jacket"
+                class="product-img default" width="300">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/2_7e273de5-9356-489b-bf9e-600e1add4790_940x.png?v=1605252316" alt="MEN Yarn Fleece Full-Zip Jacket"
+                class="product-img hover" width="300">
+                <div class="showcase-actions">
+    
+                  <button class="btn-action">
+                    <i class="bi bi-eye"></i>
+                  </button>
+      
+                  <button class="btn-action">
+                    <i class="bi bi-heart"></i>
+                  </button>
+      
+                  <button class="btn-action">
+                    <i class="bi bi-cart4"></i>
+                  </button>
+
+                  
+                <button class="btn-action">
+                  <a href="./second page/product page.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+                  
+      
+                </button>
+      
+      
+                </div>
+      
+               </div>
+    
+            <div class="showcase-content">
+              <a href="#" class="showcase-category">Jacket</a>
+    
+              <h3>
+                <a href="#" class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</a>
+              </h3>
+              <div class="price-box">
+                <p class="price">$58.00</p>
+                <del>$65.00</del>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+          <div class="showcase">
+    
+            <div class="showcase-banner">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/19_b0263b2f-3f9b-44dd-98cf-5d365fcfd5cb_940x.png?v=1605252228" alt="Black Floral Wrap Midi Skirt"
+                class="product-img default" width="300">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/20_ff268ea8-ad79-4213-9a6d-9c47db23b50d_940x.png?v=1605252228" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                width="300">
+    
+              <p class="showcase-badge angle pink">new</p>
+    
+              <div class="showcase-actions">
+    
+                <button class="btn-action">
+                  <i class="bi bi-eye"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-heart"></i>
+                </button>
+    
+                <button class="btn-action">
+                  <i class="bi bi-cart4"></i>
+                </button>
+
+
+                
+                <button class="btn-action">
+                  <a href="./second page/product page.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+                  
+      
+                </button>
+      
+    
+              </div>
+    
+            </div>
+    
+            <div class="showcase-content">
+              <a href="#" class="showcase-category">skirt</a>
+    
+              <h3>
+                <a href="#" class="showcase-title">Black Floral Wrap Midi Skirt</a>
+              </h3>
+    
+              <div class="showcase-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+    
+              <div class="price-box">
+                <p class="price">$25.00</p>
+                <del>$35.00</del>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+
+ 
+    <!-- shoose image -->
+
+
+
+    <section id="hero1" class="hero">
+      <div class="inner d-flex justify-content-center align-items-center ">
+        <div class="copy ">
+          <div class="col p-5 shadow-sm rounded" style=" background-color: #f5f1ebaf;">
+
+            <p class="h3 colork fw-light">For The Best</p>
+            <p class="h1 text-dark fs-1">Discount Sale</p>
+            <p class="h5 colork text-muted fw-bold">The Big Offer Day Extra 10% Off</p>
+            <p class="h6 text-muted">Offer only 5 days!</p>
+            <div class="col ms-auto me-auto" style="width: 200px;">
+              <button class="sign-btn text-white rounded-pill p-2">VIEW COLLECTION</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- new part -->
+
+
+  </div>
+  <style>
+    .btn11{
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .btn11:hover{
+      background-color: black;
+      color: white;
+    }
+  </style>
+    
+</div>
+
+
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Alan Doe</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="./images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor dolor sit amet.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Summer collection</h2>
+
+              <p class="cta-text">Starting @ $10</p>
+
+              <button class="cta-btn">Shop now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <p class="service-desc">For Order Over $100</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">UK Orders Only</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Best Online Support</h3>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">Return Policy</h3>
+                  <p class="service-desc">Easy & Free Return</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over $100</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+   <!-- black image -->
+   <div class="row b-img p-4 pt-5 pb-5">
+    <p class="h5 fst-italic fw-bold  d-flex justify-content-center text-white">CONNECT TO AVEDA & CO.</p>
+    <p class="h1 d-flex justify-content-center text-white">Join Our Newsletter</p>
+    <p class="h6 text-center text-white">Hey you, sign up it only takes a second to be the first to find out about our
+      latest news and <br> promotions…</p>
+    <div class="row bg-white  p-1 rounded-pill ms-auto me-auto " style="width: 600px;">
+      <div class="col d-flex align-items-center ">
+        <input type="text" name="" id="" class="input11  ">
+      </div>
+      <div class="col p-0  ">
+        <button class="btn11 p-2 ps-4 pe-4 rounded-pill float-end">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+  <br>
+
+<!--footer-->
+<footer id="dk-footer" class="dk-footer" >
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-lg-4">
+              <div class="dk-footer-box-info">
+                  <a href="index.html" class="footer-logo">
+                      <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+                  </a>
+                  <p class="footer-info-text">
+                     Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                  </p>
+                  <div class="footer-social-link">
+                      <h3>Follow us</h3>
+                      <ul>
+                          <li>
+                              <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- End Social link -->
+              </div>
+              <!-- End Footer info -->
+              <div class="footer-awarad">
+                  <img src="images/icon/best.png" alt="">
+                  <p>Best Design Company 2019</p>
+              </div>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="contact-us">
+                          <div class="contact-icon">
+                              <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>Jaipur India</h3>
+                              <p>5353 Road Avenue</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+                  <div class="col-md-6">
+                      <div class="contact-us contact-us-last">
+                          <div class="contact-icon">
+                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>95 711 9 5353</h3>
+                              <p>Give us a call</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Contact Row -->
+              <div class="row">
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget footer-left-widget">
+                          <div class="section-heading">
+                              <h3>Useful Links</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <ul>
+                              <li>
+                                  <a href="#">About us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Services</a>
+                              </li>
+                              <li>
+                                  <a href="#">Projects</a>
+                              </li>
+                              <li>
+                                  <a href="#">Our Team</a>
+                              </li>
+                          </ul>
+                          <ul>
+                              <li>
+                                  <a href="#">Contact us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Blog</a>
+                              </li>
+                              <li>
+                                  <a href="#">Testimonials</a>
+                              </li>
+                              <li>
+                                  <a href="#">Faq</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- End Footer Widget -->
+                  </div>
+                  <!-- End col -->
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget">
+                          <div class="section-heading">
+                              <h3>Subscribe</h3>
+                              <span class="animate-border border-black"></span>
+                          </div>
+                          <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                          Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                          <form action="#">
+                              <div class="form-row">
+                                  <div class="col dk-footer-form">
+                                      <input type="email" class="form-control" placeholder="Email Address">
+                                      <button type="submit">
+                                        <img src="https://img.icons8.com/plumpy/24/null/filled-sent.png" style="padding: 4opx;"/>
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
+                          <!-- End form -->
+                      </div>
+                      <!-- End footer widget -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Row -->
+          </div>
+          <!-- End Col -->
+      </div>
+      <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+
+  <div class="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <span>Copyright © 2019, All Right Reserved Seobin</span>
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                  <div class="copyright-menu">
+                      <ul>
+                          <li>
+                              <a href="#">Home</a>
+                          </li>
+                          <li>
+                              <a href="#">Terms</a>
+                          </li>
+                          <li>
+                              <a href="#">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- End col -->
+          </div>
+          <!-- End Row -->
+      </div>
+      <!-- End Copyright Container -->
+  </div>
+  <!-- End Copyright -->
+  <!-- Back to top -->
+  <div id="back-to-top" class="back-to-top">
+      <button class="btn btn-dark" title="Back to Top" style="display: block;">
+          <i class="fa fa-angle-up"></i>
+      </button>
+  </div>
+  <!-- End Back to top -->
+</footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- ------- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+  <script>
+    var currentSlide = 0;
+var slides = document.querySelectorAll('.slider-slide');
+var dots = document.querySelectorAll('.pagination-dot');
+var timer;
+
+function showSlide(n) {
+  clearTimeout(timer);
+  
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('active-slide');
+  }
+  
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('active-dot');
+  }
+  
+  slides[n].classList.add('active-slide');
+  dots[n].classList.add('active-dot');
+  
+  currentSlide = n;
+  
+  timer = setTimeout(function() {
+    showSlide((currentSlide + 1) % slides.length);
+  }, 5000);
+}
+
+for (var i = 0; i < dots.length; i++) {
+  dots[i].addEventListener('click', function() {
+    var dotIndex = Array.prototype.indexOf.call(dots, this);
+    showSlide(dotIndex);
+  });
+}
+
+showSlide(0);
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <!-- ------- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</body>
+
+</html>
+
+
+
